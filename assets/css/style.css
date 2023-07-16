@@ -1,0 +1,84 @@
+body {
+    background-color: #F3F5FC;
+}
+
+.logo {
+    margin:1.5rem 1rem;
+}
+
+textarea {
+    background-color: transparent;
+    color: #0A3871;
+}
+.advertencia {
+    margin-left: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.advertencia-icono {
+    height: 100%;
+}
+.advertencia-texto {
+    display: inline;
+
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.boton-encriptar {
+    align-items: center;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 1.5rem;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.boton-desencriptar {
+    align-items: center;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 1.5rem;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.footer {
+    color: #0A3871;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .logo {
+        margin: 4.5rem 2.5rem;
+    } 
+    .botones {
+        flex-direction: row;
+        width: calc(100% - 5rem);
+    }   
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .logo {
+        margin: 2.5rem 5rem;
+    }  
+    .botones { /*arreglar*/
+        width: 32%;
+        margin-left: 20rem;
+    }  
+}
