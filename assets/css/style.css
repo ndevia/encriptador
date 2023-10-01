@@ -15,10 +15,27 @@ body {
 }
 
 /* Área texto a trabajar */
+.cuadro-texto {
+    width: 100%;
+    margin: 1rem;
+}
+
 textarea {
     background-color: transparent;
+    border: none;
     color: #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    text-transform: lowercase;
 }
+
+::placeholder { color:#0A3871 }
+    .text-area:focus {
+        outline: none;
+    }
+
 .advertencia {
     margin-left: 1rem;
     display: flex;
@@ -80,10 +97,10 @@ textarea {
     gap: 1.5rem;
     /* margin: 2.5rem 1.5rem; */
     padding: 2rem;
-   
 }
 
 .sin-texto-mensaje {
+    background-image: url(../../assets/img/muneco.png);
     color: #343A40;
     font-family: 'Inter', sans-serif;;
     font-weight: 700;
@@ -159,6 +176,11 @@ textarea {
         margin: 4.5rem 2.5rem;
     } 
 
+    .cuadro-texto {
+        width: 100%;
+        margin: 2.5rem;
+    }
+
     .advertencia {
         margin-left: 2.5rem;
     }
@@ -206,6 +228,7 @@ textarea {
 
     .respuesta-texto {
         height: calc(100vh- 9.5rem);
+        background-image: url(../img/muneco.png);
     }
 
     .respuesta-copiar {
