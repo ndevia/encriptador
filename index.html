@@ -15,26 +15,28 @@
 		<main class="seccion-principal">
 			<section class="area-trabajo">
 				<div class="cuadro-texto">
-					<textarea class="text-area" placeholder="Ingrese el texto aquí" cols="30" rows="10" required></textarea>
+					<textarea class="text-area" placeholder="Ingrese el texto aquí" cols="30" rows="7" required></textarea>
 				</div>
 				<div class="advertencia">
 					<img src="assets/img/bi_exclamation-circle-fill.png" alt="icono asvertencia" class="advertencia-icono">
 					<p class="advertencia-texto">Sólo letras minúsculas y sin acentos</p>
 				</div>
 				<div class="botones">
-					<input type="button" class="boton-encriptar" value="Encriptar">
-					<input type="button" class="boton-desencriptar" value="Desencriptar">
+          <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+          <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
 				</div>
 			</section>
 			<section class="area-respuesta">
-				<!-- <div class="sin-texto">
+        <div class="respuesta">
+					<textarea class="respuesta-texto" cols="30" rows="10"></textarea>
+          <button class="respuesta-copiar">Copiar</button>
+				</div>
+				<div class="sin-texto">
+          <div class="imagen">
+            <img class="imagen-muneco" src="/assets/img/muneco.png" alt="imagen muñeco">
+          </div>
 					<p class="sin-texto-mensaje">Ningún mensaje fue encontrado</p>
 					<p class="sin-texto-descripcion">Ingresa el texto que desees encriptar o desencriptar.</p>
-				</div> -->
-				<div class="respuesta">
-					<!-- textarea!!! -->
-					<p class="respuesta-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, esse quam? Molestiae, rerum quisquam hic illo in amet praesentium nesciunt recusandae. Omnis aperiam officiis rerum ad quidem ut iure provident?</p>
-					<input type="button" class="respuesta-copiar" value="Copiar">
 				</div>
 			</section>
 
@@ -50,6 +52,6 @@
 		<!-- botón encriptar -->
 		<!-- botón desencriptar -->
 		<!-- área para mostrar texto -->
-			
+	  <script src="/assets/js/script.js"></script>	
 	</body>
 </html>
