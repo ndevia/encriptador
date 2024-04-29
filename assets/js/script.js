@@ -47,3 +47,30 @@ function desencriptar(stringDesencriptado) {
   }
   return stringDesencriptado;
 }
+
+// Copiar texto a clipboard
+let botonCopiar = document.getElementById("boton-copiar")
+
+botonCopiar.addEventListener("click", () => {
+  let texto = respuestaTexto
+  navigator.clipboard.writeText(texto.value)
+})
+
+
+// document.getElementById("boton-copiar").onclick = function() {
+//   navigator.clipboard.writeText(respuestaTexto)
+//   .then(function() {
+//     console.log("Text has been copied")
+//   })
+// }
+
+// function copy() {
+//   var copyText = document.getElementsByClassName("respuesta-texto");
+
+//   copyText.select();
+//   copyText.setSelectionRange(0, 99999); // For mobile devices
+
+//   navigator.clipboard.writeText(copyText.value);
+  
+//   alert("Copied the text: " + copyText.value);
+// }
